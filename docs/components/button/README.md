@@ -286,25 +286,7 @@ Change the button size based on where button is used. Default size is medium. Sm
 </template>
 
 <template slot="Design Guidelines">
-  <cdr-doc-table-of-contents-shell
-    tab-name="Design Guidelines"
-    :appended-nav-items="[
-      {
-        text: 'Related Components'
-      },
-      {
-        text: 'Call to Action buttons',
-        href: '#'
-      },
-      {
-        text: 'Toggle buttons',
-        href: '#'
-      },
-      {
-        text: 'Button groups',
-        href: '#'
-      }
-    ]">
+  <cdr-doc-table-of-contents-shell>
     <cdr-doc-alert/>
 
 ## Use When
@@ -318,7 +300,7 @@ Change the button size based on where button is used. Default size is medium. Sm
 ### Don't use when
 
 - Navigating to another page on a site
-- Taking users to a different part within the same page. Instead, use [Links](/components/link) component
+- Taking users to a different part within the same page. Instead, use [Link](/components/link/)
 
 ## Foundations
 
@@ -395,7 +377,7 @@ Change the button size based on where button is used. Default size is medium. Sm
 <template slot="API">
 <cdr-doc-table-of-contents-shell>
 
-### Properties
+## Props
 
 <cdr-doc-api type="prop" :api-data="$page.frontmatter.versions[0].components[0].api.props" />
 
@@ -426,8 +408,8 @@ Install the `cdr-button` package using `npm` in your terminal:
 
 _Terminal_
 
-```terminal
-    npm i -S @rei/cdr-button
+```bash
+npm i -S @rei/cdr-button
 ```
 
 ### 2. Import dependencies

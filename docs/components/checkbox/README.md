@@ -179,11 +179,11 @@
 
 Default and standard spacing for checkboxes.
 
-<cdr-doc-example-code-pair :background-toggle="false" repository-href="https://github.com/rei/rei-cedar/tree/18.07.2/src/components/checkbox" sandbox-href="https://codesandbox.io/s/z30opplw43" >
+<cdr-doc-example-code-pair :background-toggle="false" repository-href="https://github.com/rei/rei-cedar/tree/18.08.1/src/components/checkbox" sandbox-href="https://codesandbox.io/s/z30opplw43" >
 
 ```html
 <div>
-  <cdr-checkbox v-model="checked">Default checkbox 1</cdr-checkbox>
+  <cdr-checkbox>Default checkbox 1</cdr-checkbox>
   <cdr-checkbox>Default checkbox 2</cdr-checkbox>
   <cdr-checkbox disabled>Default checkbox 3</cdr-checkbox>
 </div>
@@ -195,11 +195,11 @@ Default and standard spacing for checkboxes.
 
 Compact spacing for checkboxes.
 
-<cdr-doc-example-code-pair :background-toggle="false" repository-href="https://github.com/rei/rei-cedar/tree/18.07.2/src/components/checkbox" sandbox-href="https://codesandbox.io/s/z30opplw43" >
+<cdr-doc-example-code-pair :background-toggle="false" repository-href="https://github.com/rei/rei-cedar/tree/18.08.1/src/components/checkbox" sandbox-href="https://codesandbox.io/s/z30opplw43" >
 
 ```html
 <div>
-  <cdr-checkbox v-model="checked" modifier="compact">Compact checkbox 1</cdr-checkbox>
+  <cdr-checkbox modifier="compact">Compact checkbox 1</cdr-checkbox>
   <cdr-checkbox modifier="compact">Compact checkbox 2</cdr-checkbox>
   <cdr-checkbox disabled modifier="compact">Compact checkbox 3</cdr-checkbox>
 </div>
@@ -211,7 +211,7 @@ Compact spacing for checkboxes.
 
 Displays status for checkbox group by indicating that some of the sub-selections in a list are selected. Provides user with ability to select or unselect all items in the list’s sub-group.
 
-<cdr-doc-example-code-pair :background-toggle="false" repository-href="https://github.com/rei/rei-cedar/tree/18.07.2/src/components/checkbox" sandbox-href="https://codesandbox.io/s/z30opplw43" >
+<cdr-doc-example-code-pair :background-toggle="false" repository-href="https://github.com/rei/rei-cedar/tree/18.08.1/src/components/checkbox" sandbox-href="https://codesandbox.io/s/z30opplw43" >
 
 ```html
 <div>
@@ -225,13 +225,23 @@ Displays status for checkbox group by indicating that some of the sub-selections
 
 Custom styles for checkboxes.
 
-<cdr-doc-example-code-pair :background-toggle="false" repository-href="https://github.com/rei/rei-cedar/tree/18.07.2/src/components/checkbox" sandbox-href="https://codesandbox.io/s/z30opplw43" class="custom-checkbox-example">
+<cdr-doc-example-code-pair :background-toggle="false" repository-href="https://github.com/rei/rei-cedar/tree/18.08.1/src/components/checkbox" sandbox-href="https://codesandbox.io/s/z30opplw43" class="custom-checkbox-example">
 
 ```html
 <div>
-  <cdr-checkbox v-model="ex1" input-class="no-box" content-class="no-box__content">Custom checkbox 1</cdr-checkbox>
-  <cdr-checkbox v-model="ex1">Custom checkbox 2</cdr-checkbox>
-  <cdr-checkbox v-model="ex1" disabled>Custom checkbox 3</cdr-checkbox>
+  <cdr-checkbox
+    modifier="hide-figure"
+    input-class="no-box"
+    content-class="no-box__content">Custom checkbox 1</cdr-checkbox>
+  <cdr-checkbox
+    modifier="hide-figure"
+    input-class="no-box"
+    content-class="no-box__content">Custom checkbox 2</cdr-checkbox>
+  <cdr-checkbox 
+    modifier="hide-figure"
+    input-class="no-box"
+    content-class="no-box__content"
+    disabled>Custom checkbox 3</cdr-checkbox>
 </div>
 ```
 
@@ -249,11 +259,11 @@ Custom styles for checkboxes.
       },
       {
         text: 'List Group',
-        href: '/components/list'
+        href: '/components/list/'
       },
       {
         text: 'Radio buttons',
-        href: '/components/radio'
+        href: '/components/radio/'
       }
     ]">
     <cdr-doc-alert/>
@@ -268,7 +278,7 @@ Custom styles for checkboxes.
 
 ### Don't use when
 
-- Selecting from a list when only 1 choice is allowed. Instead, use [Radio button](/components/radio) component
+- Selecting from a list when only 1 choice is allowed. Instead, use [Radio button](/components/radio/) component
 
 ## Content
 
@@ -354,7 +364,7 @@ Following are modifiers for `cdrCheckbox` component:
 
 ## Events
 
-<cdr-doc-api type="slot" :api-data="$page.frontmatter.versions[0].components[0].api.events" />
+<cdr-doc-api type="event" :api-data="$page.frontmatter.versions[0].components[0].api.events" />
 
 ## Installation
 
@@ -373,8 +383,8 @@ Install the `cdr-checkbox` package using `npm` in your terminal:
 
 _Terminal_
 
-```terminal
-    npm i -s @rei/cdr-checkbox
+```bash
+npm i -s @rei/cdr-checkbox
 ```
 
 ### 2. Import dependencies

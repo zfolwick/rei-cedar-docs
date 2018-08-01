@@ -46,7 +46,7 @@ When the mouse and keyboard are the primary input methods or when icons are pair
 <cdr-img class="cdr-doc-article-img" :src="$withBase(`/iconography/clearance2.png`)"/>
 
 ## Style
-Icons are built from foundational shapes within the icon grid and align to the pixel grid to ensure clarity when scaling. Optical corrections made where necessary.
+Icons are built from foundational shapes within the icon grid and align to the pixel grid to ensure clarity when scaling. Optical corrections can be made where necessary.
 
 <cdr-img class="cdr-doc-article-img" :src="$withBase(`/iconography/style.png`)"/>
 
@@ -62,14 +62,14 @@ Constructed with a 2px stroke. Strokes have a 1px rounded terminus or butt-cap.
 
 Square and rectangular shapes have 1px rounded exterior corners and sharp interior angles.
 
-<cdr-img class="cdr-doc-article-img" :src="$withBase(`/iconography/style3.png`)"/>
+<cdr-img class="cdr-doc-article-img" :src="$withBase(`/iconography/style4.png`)"/>
 
 Filled versions of select icons are available and typically represent an “on” or active state of the action, feature, or validation colors. When icons are paired with a complex or noisy background, consider using a filled icon (e.g. a filled location pin on a map environment).
 
-<cdr-img class="cdr-doc-article-img" :src="$withBase(`/iconography/style4.png`)"/>
+<cdr-img class="cdr-doc-article-img" :src="$withBase(`/iconography/style5.png`)"/>
 
 Inverse display is available when paired with darker backgrounds.
 
-<cdr-img class="cdr-doc-article-img" :src="$withBase(`/iconography/style5.png`)"/>
+<cdr-img class="cdr-doc-article-img" :src="$withBase(`/iconography/style6.png`)"/>
 
 </cdr-doc-table-of-contents-shell>

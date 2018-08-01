@@ -3,7 +3,7 @@
   "title": "Call to Action",
   "layout": "LayoutComponent",
   "summary": "Stylized link used in campaigns and promotions to encourage users to further explore featured products, services or offers.",
-  "title_metadata": "Call to Action, CTA, CTA button, cdr-cta",
+  "title_metadata": "Call to Action, CTA, CTA button, cdrCta",
   "placement": [
     {
       "type": "do",
@@ -139,7 +139,7 @@
 
 Use dark Call to Action over a light background image or color to provide proper contrast. This is the default Call to Action style.
 
-<cdr-doc-example-code-pair :background-toggle="false" repository-href="https://github.com/rei/rei-cedar/tree/18.07.1/src/components/cta" sandbox-href="https://codesandbox.io/s/9ojj43x1op">
+<cdr-doc-example-code-pair :background-toggle="false" repository-href="https://github.com/rei/rei-cedar/tree/18.08.1/src/components/cta" sandbox-href="https://codesandbox.io/s/9ojj43x1op">
 
 ```html
   <cdr-cta 
@@ -156,7 +156,7 @@ Use dark Call to Action over a light background image or color to provide proper
 
 Use light Call to Action over a dark background image or color to provide proper contrast.
 
-<cdr-doc-example-code-pair repository-href="https://github.com/rei/rei-cedar/tree/18.07.1/src/components/cta" sandbox-href="https://codesandbox.io/s/9ojj43x1op">
+<cdr-doc-example-code-pair repository-href="https://github.com/rei/rei-cedar/tree/18.08.1/src/components/cta" sandbox-href="https://codesandbox.io/s/9ojj43x1op">
 
 ```html
   <cdr-cta 
@@ -173,7 +173,7 @@ Use light Call to Action over a dark background image or color to provide proper
 
 Use sale Call to Action for off-price placements.
 
-<cdr-doc-example-code-pair repository-href="https://github.com/rei/rei-cedar/tree/18.07.1/src/components/cta" sandbox-href="https://codesandbox.io/s/9ojj43x1op">
+<cdr-doc-example-code-pair repository-href="https://github.com/rei/rei-cedar/tree/18.08.1/src/components/cta" sandbox-href="https://codesandbox.io/s/9ojj43x1op">
 
 ```html
   <cdr-cta 
@@ -190,7 +190,7 @@ Use sale Call to Action for off-price placements.
 
 Use CTA blue link as an alternative.
 
-<cdr-doc-example-code-pair repository-href="https://github.com/rei/rei-cedar/tree/18.07.1/src/components/cta" sandbox-href="https://codesandbox.io/s/9ojj43x1op">
+<cdr-doc-example-code-pair repository-href="https://github.com/rei/rei-cedar/tree/18.08.1/src/components/cta" sandbox-href="https://codesandbox.io/s/9ojj43x1op">
 
 ```html
   <cdr-cta
@@ -207,7 +207,7 @@ Use CTA blue link as an alternative.
 
 Adds drop shadow to increase contrast and visibility of Call to Action when placed over an image.
 
-<cdr-doc-example-code-pair repository-href="https://github.com/rei/rei-cedar/tree/18.07.1/src/components/cta" sandbox-href="https://codesandbox.io/s/9ojj43x1op">
+<cdr-doc-example-code-pair repository-href="https://github.com/rei/rei-cedar/tree/18.08.1/src/components/cta" sandbox-href="https://codesandbox.io/s/9ojj43x1op">
 
 ```html
   <cdr-cta 
@@ -306,7 +306,7 @@ This component has no specific WCAG compliance attributes built into the control
 <template slot="API">
 <cdr-doc-table-of-contents-shell>
   
-## Properties
+## Props
 <cdr-doc-api type="prop" :api-data="$page.frontmatter.versions[0].components[0].api.props" />
 
 ## Slots
@@ -333,8 +333,8 @@ Install the `cdr-cta` package using `npm` in your terminal:
 
 _Terminal_
 
-```terminal
-    npm i -s @rei/cdr-link
+```bash
+npm i -s @rei/cdr-link
 ```
 
 ### #2. Import Dependencies
