@@ -68,16 +68,16 @@ For more information, review techniques and failures for:
 
 ## Props
 
+## Slots
+
+## Events
+
 ## Modifiers
 
 Following are modifiers for `cdrTable` component:
 
 - compact
 - borderless
-
-## Slots
-
-## Events
 
 ## Installation
 
@@ -120,15 +120,10 @@ _local.vue_
 <script>
 import { CdrTable } from '@rei/cdr-table';
 export default {
-  name: 'Table',
-  components: Components,
+  components: { CdrTable },
   data() {
     return {
-      bookHeaders: [
-        'Title',
-        'Year',
-        'Author',
-      ],
+      bookHeaders: ['Title','Year','Author'],
       bookRecords: [
         {
           title: 'Book A',
@@ -160,6 +155,7 @@ export default {
 
 ## Accessibility
 
+- 
 
 
 </cdr-doc-table-of-contents-shell>
