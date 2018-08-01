@@ -52,6 +52,7 @@ module.exports = {
           { text: "Button", link: "/components/button/" },
           { text: "Call to Action", link: "/components/cta/" },
           { text: "Checkbox", link: "/components/checkbox/" },
+          { text: "Data Table", link: "/components/table/" },
           { text: "Grid", link: "/components/grid/" },
           { text: "Heading", link: "/components/heading/" },
           { text: "Image", link: "/components/image/" },
