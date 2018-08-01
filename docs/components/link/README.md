@@ -38,6 +38,48 @@
     ],
   "versions": [
     {
+      "api": {
+        "props": [
+          {
+            "name": "size",
+            "type": "string",
+            "default": "\"medium\"",
+            "description": "Sets a static size for the button, which scales padding and text size. {small, medium, large}"
+          },
+          {
+            "name": "responsiveSize",
+            "type": "array",
+            "default": "n/a",
+            "description": "Render a specific button size at a specific breakpoint. Takes precedence over size and fullWidth.\nFormat is size@breakpoint (ex: large@sm)."
+          }
+        ],
+        "slots": [
+          {
+            "name": "default",
+            "description": "innerHTML on the inside of the button component"
+          },
+          {
+            "name": "test",
+            "description": "testing multiple slot documentation"
+          }
+        ]
+      },
+      "version": "0.1.1"
+    },
+    {
+      "api": {
+        "props": [
+          {
+            "name": "tag",
+            "type": "string",
+            "default": "\"a\"",
+            "description": "MISSING DESCRIPTION"
+          },
+          {
+            "name": "href",
+            "type": "string",
+            "default": "\"#\"",
+            "description": "MISSING DESCRIPTION"
       "components": [
         {
           "name": "CdrLink",
@@ -266,6 +308,8 @@ Display icon on right of link message.
         text: 'CTA Buttons'
       }
     ]">
+
+<cdr-doc-versioned-api headerTag="h2" compName="CdrLink"/>
 
 ## Properties
 
