@@ -104,11 +104,56 @@ _main.js_
 
 ```javascript
 // import your required css.
-import "@rei/cdr-link/dist/cdr-table.css";
+import "@rei/cdr-table/dist/cdr-table.css";
 ```
 
 ### 3. Add component to a template
 
+_local.vue_
+```vue
+<template>
+  <cdr-table
+      :records="bookRecords"
+      :headers="bookHeaders"
+      :row-headers="true"/>
+</template>
+<script>
+import { CdrTable } from '@rei/cdr-table';
+export default {
+  name: 'Table',
+  components: Components,
+  data() {
+    return {
+      bookHeaders: [
+        'Title',
+        'Year',
+        'Author',
+      ],
+      bookRecords: [
+        {
+          title: 'Book A',
+          year: 1823,
+          author: 'Mikey',
+          rowheader: 'row 1',
+        },
+        {
+          title: 'Book C',
+          year: 1532,
+          author: 'Joey',
+          rowheader: 'row 2',
+        },
+        {
+          title: 'Book E',
+          year: 1253,
+          author: 'Scotty',
+          rowheader: 'row 3',
+        },
+      ],
+    };
+  },
+};
+</script>
+```
 ## Usage
 
 
